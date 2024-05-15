@@ -16,6 +16,12 @@ var server = http.createServer((req, res) => {
         case 'about':
             fileLocation = "pages/about.html";
             break;
+        case 'kk':
+            fileLocation = "pages/KK.html";
+            break;
+        case 'Penduduk':
+            fileLocation = "pages/Penduduk.html";
+            break;
         default:
             fileLocation = "pages/index.html";
     }
