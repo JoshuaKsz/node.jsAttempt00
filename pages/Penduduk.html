@@ -32,6 +32,68 @@
             margin-left: 260px;
             padding: 20px;
         }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        th, td {
+            padding: 12px;
+            border: 1px solid #dddddd;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        tr:hover {
+            background-color: #f1f1f1;
+        }
+        
+        form {
+            width: 50%;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #f8f8f8;
+        }
+
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            background-color: #fff;
+        }
+
+        input[type="text"]:focus {
+            border-color: #4CAF50;
+            outline: none;
+        }
+
+        input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            background-color: #4CAF50;
+            color: white;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
     </style>
 </head>
 <body>
@@ -45,8 +107,69 @@
 
 <div class="content">
     <h2>Penduduk</h2>
-    <p>This is the main content area.</p>
-    <p>Click on the links in the sidebar to navigate.</p>
+    <table>
+        <thead>
+            <tr>
+                <th>NIK</th>
+                <th>Nama</th>
+                <th>Tempat/Tgl Lahir</th>
+                <th>Jenis Kelamin</th>
+                <th>Alamat</th>
+                <th>Agama</th>
+                <th>Status</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>5165165486465156</td>
+                <td>Pepega Warlord</td>
+                <td>pyongyang, 20-5-1945</td>
+                <td>non binary</td>
+                <td>Petersburger Straße</td>
+                <td>Baru</td>
+                <td>Jomblo</td>
+                <td>Hapus & edit</td>
+            </tr>
+            <tr>
+                <td>65165165123312123</td>
+                <td>Mao Zedong (毛澤東)</td>
+                <td>tiananmen square, 15-04-1989</td>
+                <td>Binary</td>
+                <td>danziger straße</td>
+                <td>Baru</td>
+                <td>4 kali menikah</td>
+                <td>Hapus & edit</td>
+            </tr>
+            <tr>
+                <td>ISI</td>
+                <td>ISI</td>
+                <td>ISI</td>
+                <td>ISI</td>
+                <td>ISI</td>
+                <td>ISI</td>
+                <td>ISI</td>
+                <td>Hapus & edit</td>
+            </tr>
+        </tbody>
+    </table>
+    <form>
+        NIK
+        <input type="text" placeholder="565465451231323">
+        Nama
+        <input type="text" placeholder="לחכלשדצזבסצצנ">
+        Tempat/Tgl Lahir
+        <input type="text" placeholder="操你妈，2001年9月11日">
+        Jenis Kelamin
+        <input type="text" placeholder="Male">
+        Alamat
+        <input type="text" placeholder="日本">
+        Agama
+        <input type="text" placeholder="Agama">
+        Status
+        <input type="text" placeholder="不知道">
+        <input type="submit" value="Submit">
+    </form>
 </div>
 
 </body>

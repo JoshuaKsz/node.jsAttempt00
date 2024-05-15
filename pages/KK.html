@@ -56,6 +56,44 @@
         tr:hover {
             background-color: #f1f1f1;
         }
+
+        form {
+            width: 50%;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #f8f8f8;
+        }
+
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            background-color: #fff;
+        }
+
+        input[type="text"]:focus {
+            border-color: #4CAF50;
+            outline: none;
+        }
+
+        input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            background-color: #4CAF50;
+            color: white;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
     </style>
 </head>
 <body>
@@ -72,29 +110,44 @@
     <table>
         <thead>
             <tr>
-                <th>no KartuKeluarga</th>
+                <th>no Kartu Keluarga</th>
                 <th>NIK Kepala Keluarga</th>
-                <th>Header 3</th>
+                <th>Nama Kepala Keluarga</th>
+                <th>Action</th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <td>Row 1, Cell 1</td>
-                <td>Row 1, Cell 2</td>
-                <td>Row 1, Cell 3</td>
+                <td>56654654654654651</td>
+                <td>5165165486465156</td>
+                <td>John Hoe</td>
+                <td>Hapus & edit</td>
             </tr>
             <tr>
-                <td>Row 2, Cell 1</td>
-                <td>Row 2, Cell 2</td>
-                <td>Row 2, Cell 3</td>
+                <td>5464566515156</td>
+                <td>4465465456121</td>
+                <td>Dream</td>
+                <td>Hapus & edit</td>
             </tr>
             <tr>
-                <td>Row 3, Cell 1</td>
-                <td>Row 3, Cell 2</td>
-                <td>Row 3, Cell 3</td>
+                <td>ISI</td>
+                <td>ISI</td>
+                <td>ISI</td>
+                <td>Hapus & edit</td>
             </tr>
         </tbody>
     </table>
+
+    
+    <form>
+        no KartuKeluarga
+        <input type="text" placeholder="Enter no">
+        NIK Kepala Keluarga
+        <input type="text" placeholder="Enter your NIK">
+        Nama Kepala Keluarga
+        <input type="text" placeholder="Enter your name...">
+        <input type="submit" value="Submit">
+    </form>
 </div>
 
 </body>
